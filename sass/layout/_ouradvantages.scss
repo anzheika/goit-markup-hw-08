@@ -1,0 +1,88 @@
+.our-advantages {
+  display: flex;
+  align-items: center;
+  padding-bottom: 95px;
+  padding-top: 95px;
+}
+.our-advantages-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.advantages-list-item {
+  width: calc((100% - 90px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.advantages-title-antenna::before {
+  display: block;
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-image: url(../images/our-advantages-elements/antenna.svg);
+}
+.advantages-title-clock::before {
+  display: block;
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-image: url(../images/our-advantages-elements/clock.svg);
+}
+
+.advantages-title-diagram::before {
+  display: block;
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-image: url(../images/our-advantages-elements/diagram.svg);
+}
+
+.advantages-title-astronaut::before {
+  display: block;
+  background-color: #f5f4fa;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 30px;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-image: url(../images/our-advantages-elements/astronaut.svg);
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.our-advantages-text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}

@@ -1,0 +1,126 @@
+.footer {
+  background-color: #2f303a;
+  font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-list {
+  list-style: none;
+}
+.address-name {
+  max-width: 232px;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 10px;
+}
+
+.logoweb-footer {
+  display: block;
+}
+.address-mail {
+  margin-bottom: 10px;
+}
+.address-mail,
+.address-tel {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-container-first {
+  margin-right: 70px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-links-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 93px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list-icon-footer {
+  fill: white;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--primary-bg-color);
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.social-list-item {
+  margin-right: 10px;
+}
+.subscribe-input-wrapper {
+  display: flex;
+}
+
+.footer-subscribe-form {
+  display: block;
+}
+.footer-subscribe-container {
+  display: block;
+}
+.footer-input-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  background: none;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.submit-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #188ce8;
+  }
+}
+
+.footer-icon-send {
+  fill: #ffffff;
+  margin-left: 10px;
+}
