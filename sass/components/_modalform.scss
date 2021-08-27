@@ -110,6 +110,10 @@
     border-color: var(--accent-color);
     outline: none;
   }
+  &::placeholder {
+    text-transform: uppercase;
+    color: rgba(255, 0, 0, 0.5);
+  }
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {

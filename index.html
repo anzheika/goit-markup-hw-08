@@ -18,7 +18,7 @@
 
   <body class="page">
     <!--Шапка сайта-->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container header-container">
         <a href="/" class="logoweb">Web<span class="logostudio">Studio</span></a>
         <nav class="nav">
@@ -30,7 +30,7 @@
         </nav>
         <ul class="nav-container">
           <li class="nav-item-mail">
-            <a href="mailto:info@devstudio.com" class="nav-link link">
+            <a href="mailto:info@devstudio.com" class="nav-link nav-link-mail link">
               <svg class="nav-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -38,7 +38,7 @@
             </a>
           </li>
           <li class="nav-item-tel">
-            <a href="tel:+380991111111" class="nav-link link">
+            <a href="tel:+380991111111" class="nav-link nav-link-mail link">
               <svg class="nav-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -47,10 +47,11 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
+      <!------------ БАННЕР===== -->
       <section class="hero">
-        <div class="hero-container container">
+        <div class="hero-container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button-text button" data-modal-open>Заказать услугу</button>
         </div>
@@ -62,33 +63,43 @@
           <h2 class="visually-hidden">Наши преймущества</h2>
           <ul class="our-advantages-list">
             <li class="advantages-list-item">
-              <h3 class="advantages-title advantages-title-antenna">Внимание к деталям</h3>
-              <p class="">
+              <div class="advantages-icon-wrapper">
+                <h3 class="advantages-title advantages-title-antenna">Внимание к деталям</h3>
+              </div>
+              <p class="our-advantages-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="advantages-list-item">
-              <h3 class="advantages-title advantages-title-clock">Пунктуальность</h3>
-              <p class="">
+              <div class="advantages-icon-wrapper">
+                <h3 class="advantages-title advantages-title-clock">Пунктуальность</h3>
+              </div>
+              <p class="our-advantages-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="advantages-list-item">
-              <h3 class="advantages-title advantages-title-diagram">Планирование</h3>
-              <p class="">
+              <div class="advantages-icon-wrapper">
+                <h3 class="advantages-title advantages-title-diagram">Планирование</h3>
+              </div>
+              <p class="our-advantages-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="advantages-list-item">
-              <h3 class="advantages-title advantages-title-astronaut">Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <div class="advantages-icon-wrapper">
+                <h3 class="advantages-title advantages-title-astronaut">Современные технологии</h3>
+              </div>
+              <p class="our-advantages-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="whatdowedo">
+      <section class="whatdowedo section">
         <div class="container container-whatdowedo">
           <h2 class="whatdowedo-title">Чем мы занимаемся</h2>
           <ul class="whatdowedo-list">
@@ -114,11 +125,21 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team-list">
             <li class="our-team-list__item">
-              <img
-                src="images/productdesigner.jpg"
-                width="270"
-                alt="Team member product designer"
-              />
+              <picture>
+                <source
+                  srcset="./images/team-members/productdesigner-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team-members/team-designer-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-members/team-designer-mobile.jpg"
+                  media="(min-width: 320px)"
+                />
+                <img src="#" width="" alt="Team member product designer" />
+              </picture>
               <div class="our-team-list-content">
                 <h3 class="our-team-list__member">Игорь Демьяненко</h3>
                 <p class="our-team-list__position">Product designer</p>
@@ -155,11 +176,22 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img
-                src="images/frontenddeveloper.jpg"
-                width="270"
-                alt="Team member Frontend developer"
-              />
+              <picture>
+                <source
+                  srcset="./images/team-members/frontend-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team-members/frontend-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-members/frontend-mobile.jpg"
+                  media="(min-width: 320px)"
+                />
+                <img src="#" width="" alt="Team member Frontend developer" />
+              </picture>
+
               <div class="our-team-list-content">
                 <h3 class="our-team-list__member">Ольга Репина</h3>
                 <p class="our-team-list__position">Frontend Developer</p>
@@ -196,7 +228,22 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img src="images/marketing.jpg" width="270" alt="Team member for marketing" />
+              <picture>
+                <source
+                  srcset="./images/team-members/marketing-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team-members/marketing-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-members/marketing-mobile.jpg"
+                  media="(min-width: 320px)"
+                />
+                <img src="#" width="" alt="Team member for marketing" />
+              </picture>
+
               <div class="our-team-list-content">
                 <h3 class="our-team-list__member">Николай Тарасов</h3>
                 <p class="our-team-list__position">Marketing</p>
@@ -233,7 +280,22 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img src="images/uidesigner.jpg" width="270" alt="Team member ui designer" />
+              <picture>
+                <source
+                  srcset="./images/team-members/uidesigner-desktop.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team-members/uidesigner-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-members/uidesigner-mobile.jpg"
+                  media="(min-width: 320px)"
+                />
+                <img src="#" width="" alt="Team member ui designer" />
+              </picture>
+
               <div class="our-team-list-content">
                 <h3 class="our-team-list__member">Михаил Ермаков</h3>
                 <p class="our-team-list__position">UI designer</p>
